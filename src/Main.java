@@ -6,6 +6,7 @@ public class Main {
         System.out.println(goWalk(46, 10));
         System.out.println(goWalk(1, 2));
         System.out.println(goWalk(10, -10));
+        System.out.println(goWalk(generateRandomAge(), 10));
     }
 
     public static String goWalk(int ageOfPerson, int temperature) {
@@ -21,6 +22,7 @@ public class Main {
     }
 
     public static int generateRandomAge() {
-        
+        int randomAge = (int) (Math.random() * 50);
+        return randomAge;
     }
 }
